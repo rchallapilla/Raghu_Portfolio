@@ -7,7 +7,7 @@ const projects = [
     title: "House Whisperer",
     description:
       "Multimodal home inspection AI powered by multi-agent systems and RAG. Analyzes property conditions using InterNACHI standards to deliver instant, professional-grade inspection reports.",
-    impact: "Report generation: 1-3 hrs → 10 mins",
+    impact: "12x Faster Report Generation",
     techStack: ["Multi-Agent", "RAG", "Computer Vision", "InterNACHI Standards"],
     demo: "https://house-whisperer-demoday.vercel.app/",
     website: "https://www.housewhisperer.io/",
@@ -54,12 +54,12 @@ export function AIBuilds() {
                 <CardContent className="p-8">
                   <div className="space-y-6">
                     <div className="space-y-3">
-                      <div className="flex items-start justify-between gap-4">
+                      <div className="flex flex-col md:flex-row items-start md:items-center md:justify-between gap-4">
                         <h3 className="text-2xl font-bold group-hover:text-primary transition-colors">
                           {project.title}
                         </h3>
-                        <div className="glass-card px-3 py-1 rounded-full shrink-0">
-                          <span className="text-xs font-mono text-primary">{project.impact}</span>
+                        <div className="glass-card px-3 py-1 rounded-full">
+                          <span className="text-xs md:text-sm font-mono text-primary whitespace-nowrap">{project.impact}</span>
                         </div>
                       </div>
                       <p className="text-muted-foreground leading-relaxed">{project.description}</p>
