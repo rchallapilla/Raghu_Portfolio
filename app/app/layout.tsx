@@ -8,9 +8,8 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  // <CHANGE> Updated metadata for House WhispererAI
-  title: "House WhispererAI - AI-Powered Home Inspection Reports",
-  description: "Generate InterNACHI and ASHI compliant home inspection reports using AI and voice notes",
+  title: "Raghu Challapilla - AI Product Manager",
+  description: "AI Product Manager & Builder - Showcasing AI builds, technical demos, and engineering deep dives",
   generator: "v0.app",
   icons: {
     icon: [
