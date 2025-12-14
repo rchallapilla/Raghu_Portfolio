@@ -16,7 +16,7 @@ const projects = [
   {
     title: "ModelGov",
     description:
-      "MRM Knowledge Assistant that won the Bank of America Innovation Challenge. Transforms model risk management onboarding from weeks to hours using intelligent knowledge retrieval.",
+      "Built for the Bank of America Innovation Challenge, this RAG-based assistant validated that domain knowledge onboarding can be done in days rather than months with scripted NLU bots.",
     impact: "90% reduced onboarding time",
     techStack: ["RAG", "LangChain", "Knowledge Graphs", "Enterprise AI"],
     demo: "https://model-risk-management.vercel.app/",
