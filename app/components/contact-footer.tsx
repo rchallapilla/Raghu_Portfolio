@@ -10,7 +10,7 @@ export function ContactFooter() {
             <div className="space-y-2">
               <h3 className="font-mono text-xl font-semibold">Let's Connect</h3>
               <p className="text-sm text-muted-foreground">
-                Open to collaborations, product leadership opportunities, and AI consulting
+                Open to select AI collaborations and advisory work
               </p>
             </div>
             <div className="flex items-center gap-4">
