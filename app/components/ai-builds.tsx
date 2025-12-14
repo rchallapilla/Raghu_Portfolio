@@ -6,9 +6,9 @@ const projects = [
   {
     title: "House Whisperer",
     description:
-      "Multimodal home inspection AI powered by multi-agent systems and RAG. Analyzes property conditions using InterNACHI standards to deliver instant, professional-grade inspection reports.",
+      "Inspectors spend 1 - 3 hrs writing reports. Multimodal multiagentic RAG system analyzes property conditions using InterNACHI ASHI standards to deliver instant, professional-grade inspection reports. Bonus: Home Inspector assitant to answer all questions about standards, codes, and guidelines",
     impact: "12x Faster Report Generation",
-    techStack: ["Multi-Agent", "RAG", "Computer Vision", "InterNACHI Standards"],
+    techStack: ["Multi-Agent", "RAG", "Multimodal", "InterNACHI and ASHI"],
     demo: "https://house-whisperer-demoday.vercel.app/",
     website: "https://www.housewhisperer.io/",
     github: null,
