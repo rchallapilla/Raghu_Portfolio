@@ -22,42 +22,71 @@ export function Navigation() {
   }
 
   return (
-    <nav
-      className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-        isScrolled ? "bg-background/80 backdrop-blur-lg border-b border-border" : "bg-transparent",
-      )}
-    >
-      <div className="container mx-auto px-4 py-4">
-        <div className="flex items-center justify-between">
-          <button
-            onClick={() => scrollToSection("hero")}
-            className="font-mono text-lg font-semibold text-primary hover:text-primary/80 transition-colors"
-          >
-            RC
-          </button>
-          <div className="flex items-center gap-6">
-            <button
-              onClick={() => scrollToSection("builds")}
-              className="text-sm font-medium hover:text-primary transition-colors"
+    <>
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-primary focus:text-primary-foreground focus:rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+      >
+        Skip to main content
+      </a>
+      <nav
+        className={cn(
+          "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
+          isScrolled ? "bg-background/80 backdrop-blur-lg border-b border-border" : "bg-transparent",
+        )}
+        aria-label="Main navigation"
+      >
+        <div className="container mx-auto px-4 py-4">
+          <div className="flex items-center justify-between">
+            <a
+              href="#hero"
+              onClick={(e) => {
+                e.preventDefault()
+                scrollToSection("hero")
+              }}
+              className="font-mono text-lg font-semibold text-primary hover:text-primary/80 transition-colors"
+              aria-label="Go to homepage"
             >
-              Builds
-            </button>
-            <button
-              onClick={() => scrollToSection("videos")}
-              className="text-sm font-medium hover:text-primary transition-colors"
-            >
-              Deep Dives
-            </button>
-            <button
-              onClick={() => scrollToSection("about")}
-              className="text-sm text-muted-foreground hover:text-primary transition-colors"
-            >
-              About
-            </button>
+              RC
+            </a>
+            <div className="flex items-center gap-6" role="list">
+              <a
+                href="#builds"
+                onClick={(e) => {
+                  e.preventDefault()
+                  scrollToSection("builds")
+                }}
+                className="text-sm font-medium hover:text-primary transition-colors"
+                role="listitem"
+              >
+                Builds
+              </a>
+              <a
+                href="#videos"
+                onClick={(e) => {
+                  e.preventDefault()
+                  scrollToSection("videos")
+                }}
+                className="text-sm font-medium hover:text-primary transition-colors"
+                role="listitem"
+              >
+                Deep Dives
+              </a>
+              <a
+                href="#about"
+                onClick={(e) => {
+                  e.preventDefault()
+                  scrollToSection("about")
+                }}
+                className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                role="listitem"
+              >
+                About
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </>
   )
 }

@@ -170,8 +170,26 @@ export function VideoLibrary() {
       ? videos
       : videos.filter((video) => video.tags.some((tag) => tag.toLowerCase().includes(selectedTag.toLowerCase())))
 
+  const videoSchemas = videos.map((video) => ({
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    name: video.title,
+    description: video.description,
+    thumbnailUrl: "https://www.raghuchallapilla.com/og-image.png",
+    uploadDate: new Date().toISOString(),
+    contentUrl: video.loomUrl,
+    embedUrl: video.loomUrl,
+  }))
+
   return (
     <section id="videos" className="py-24 relative bg-secondary/20">
+      {videoSchemas.map((schema, index) => (
+        <script
+          key={index}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
+      ))}
       <div className="container mx-auto px-4">
         <div className="max-w-7xl mx-auto space-y-12">
           <div className="text-center space-y-4">
@@ -204,8 +222,8 @@ export function VideoLibrary() {
               >
                 <CardContent className="p-6">
                   <div className="space-y-4">
-                    <div className="aspect-video bg-secondary/50 rounded-lg flex items-center justify-center group-hover:bg-secondary/70 transition-colors">
-                      <Play className="h-12 w-12 text-primary" />
+                    <div className="aspect-video bg-secondary/50 rounded-lg flex items-center justify-center group-hover:bg-secondary/70 transition-colors" aria-label={`Video thumbnail for ${video.title}`}>
+                      <Play className="h-12 w-12 text-primary" aria-hidden="true" />
                     </div>
                     <div className="space-y-3">
                       <h3 className="font-semibold leading-tight group-hover:text-primary transition-colors line-clamp-2">
