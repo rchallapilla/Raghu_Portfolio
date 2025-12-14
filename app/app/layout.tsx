@@ -11,6 +11,27 @@ export const metadata: Metadata = {
   title: "Raghu Challapilla - AI Product Manager",
   description: "AI Product Manager & Builder - Showcasing AI builds, technical demos, and engineering deep dives",
   generator: "v0.app",
+  openGraph: {
+    title: "Raghu Challapilla - AI Product Manager",
+    description: "AI Product Manager & Builder - Showcasing AI builds, technical demos, and engineering deep dives",
+    url: "https://www.raghuchallapilla.com/",
+    siteName: "Raghu Challapilla Portfolio",
+    type: "website",
+    images: [
+      {
+        url: "/og-image.png", // You'll need to add this image to public folder
+        width: 1200,
+        height: 630,
+        alt: "Raghu Challapilla - AI Product Manager Portfolio",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Raghu Challapilla - AI Product Manager",
+    description: "AI Product Manager & Builder - Showcasing AI builds, technical demos, and engineering deep dives",
+    images: ["/og-image.png"], // Same image for Twitter
+  },
   icons: {
     icon: [
       {
