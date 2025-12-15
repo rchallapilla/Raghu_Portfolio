@@ -32,12 +32,12 @@ export function VideoModal({ video, onClose }: VideoModalProps) {
         onClick={(e) => e.stopPropagation()}
       >
         <div className="flex items-center justify-between p-4 border-b border-border">
-          <h3 className="font-semibold text-lg pr-8 line-clamp-1">{video.title}</h3>
+          <h3 className="font-semibold text-base md:text-lg pr-8 line-clamp-1">{video.title}</h3>
           <Button variant="ghost" size="icon" onClick={onClose} className="shrink-0">
             <X className="h-5 w-5" />
           </Button>
         </div>
-        <div className="p-6 space-y-4">
+        <div className="p-4 md:p-6 space-y-4">
           <div dangerouslySetInnerHTML={{ __html: video.embedCode }} />
           <p className="text-sm text-muted-foreground leading-relaxed">{video.description}</p>
           {video.github && (

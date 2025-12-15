@@ -49,14 +49,14 @@ export function Navigation() {
             >
               RC
             </a>
-            <div className="flex items-center gap-6" role="list">
+            <div className="flex items-center gap-4 md:gap-6" role="list">
               <a
                 href="#builds"
                 onClick={(e) => {
                   e.preventDefault()
                   scrollToSection("builds")
                 }}
-                className="text-sm font-medium hover:text-primary transition-colors"
+                className="text-base md:text-sm font-medium hover:text-primary transition-colors"
                 role="listitem"
               >
                 Builds
@@ -67,7 +67,7 @@ export function Navigation() {
                   e.preventDefault()
                   scrollToSection("videos")
                 }}
-                className="text-sm font-medium hover:text-primary transition-colors"
+                className="text-base md:text-sm font-medium hover:text-primary transition-colors"
                 role="listitem"
               >
                 Deep Dives
@@ -78,7 +78,7 @@ export function Navigation() {
                   e.preventDefault()
                   scrollToSection("about")
                 }}
-                className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                className="text-base md:text-sm text-muted-foreground hover:text-primary transition-colors"
                 role="listitem"
               >
                 About

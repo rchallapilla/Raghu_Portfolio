@@ -68,18 +68,18 @@ export function AIBuilds() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-1 gap-8">
+          <div className="grid gap-8">
             {projects.map((project, index) => (
               <article
                 key={index}
-                className="glass-card border-border hover:border-primary/50 transition-all duration-300 group rounded-lg border p-8"
+                className="glass-card border-border hover:border-primary/50 transition-all duration-300 group rounded-lg border p-6 md:p-8"
                 itemScope
                 itemType="https://schema.org/SoftwareApplication"
               >
                 <div className="space-y-6">
                   <div className="space-y-3">
                     <div className="flex flex-col md:flex-row items-start md:items-center md:justify-between gap-4">
-                      <h3 className="text-2xl font-bold group-hover:text-primary transition-colors" itemProp="name">
+                      <h3 className="text-xl md:text-2xl font-bold group-hover:text-primary transition-colors" itemProp="name">
                         {project.title}
                       </h3>
                         <div className="glass-card px-3 py-1 rounded-full">

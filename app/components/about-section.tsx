@@ -13,10 +13,10 @@ export function AboutSection() {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <Card className="glass-card border-border">
-            <CardContent className="p-8">
+            <CardContent className="p-6 md:p-8">
               <div className="space-y-6">
                 <div className="flex items-center justify-between">
-                  <h2 className="font-mono text-2xl font-bold">About</h2>
+                  <h2 className="font-mono text-xl md:text-2xl font-bold">About</h2>
                   <Button variant="ghost" size="sm" onClick={() => setIsExpanded(!isExpanded)} className="gap-2">
                     {isExpanded ? (
                       <>

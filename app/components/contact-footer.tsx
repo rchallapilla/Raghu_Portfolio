@@ -8,7 +8,7 @@ export function ContactFooter() {
         <div className="max-w-4xl mx-auto">
           <div className="flex flex-col items-center gap-6 text-center">
             <div className="space-y-2">
-              <h3 className="font-mono text-xl font-semibold">Let's Connect</h3>
+              <h3 className="font-mono text-lg md:text-xl font-semibold">Let's Connect</h3>
               <p className="text-sm text-muted-foreground">
                 Open to select AI collaborations and advisory work
               </p>

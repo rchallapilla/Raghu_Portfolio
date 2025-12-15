@@ -220,7 +220,7 @@ export function VideoLibrary() {
                 className="glass-card border-border hover:border-primary/50 transition-all duration-300 group cursor-pointer"
                 onClick={() => setSelectedVideo(video)}
               >
-                <CardContent className="p-6">
+                <CardContent className="p-4 md:p-6">
                   <div className="space-y-4">
                     <div className="aspect-video bg-secondary/50 rounded-lg flex items-center justify-center group-hover:bg-secondary/70 transition-colors" aria-label={`Video thumbnail for ${video.title}`}>
                       <Play className="h-12 w-12 text-primary" aria-hidden="true" />
