@@ -11,7 +11,7 @@ export function HeroSection() {
   }
 
   return (
-    <section id="hero" className="relative min-h-[calc(100vh-4rem)] flex items-center justify-center overflow-hidden pt-20">
+    <section id="hero" className="relative flex flex-col justify-start items-center overflow-hidden pt-24 pb-20">
       <div className="absolute inset-0 grid-pattern opacity-50" />
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/50 to-background" />
 
