@@ -51,7 +51,7 @@ export function AIBuilds() {
   }))
 
   return (
-    <section id="builds" className="py-24 relative">
+    <section id="builds" className="py-20 relative">
       {softwareSchemas.map((schema, index) => (
         <script
           key={index}

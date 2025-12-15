@@ -9,7 +9,7 @@ export function AboutSection() {
   const [isExpanded, setIsExpanded] = useState(false)
 
   return (
-    <section id="about" className="py-24 relative">
+    <section id="about" className="py-20 relative">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <Card className="glass-card border-border">
