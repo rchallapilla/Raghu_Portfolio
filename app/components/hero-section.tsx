@@ -32,7 +32,7 @@ export function HeroSection() {
               <span className="text-primary font-mono">Forrester Award Winning AI</span>
             </div>
             <div className="glass-card px-4 py-2 rounded-full">
-              <span className="text-primary font-mono">20+ LLM Apps Shipped</span>
+              <span className="text-primary font-mono">90% Reduced Onboarding Time</span>
             </div>
           </div>
 
