@@ -182,7 +182,7 @@ export function VideoLibrary() {
   }))
 
   return (
-    <section id="videos" className="py-24 relative bg-secondary/20">
+    <section id="videos" className="py-20 relative bg-secondary/20">
       {videoSchemas.map((schema, index) => (
         <script
           key={index}

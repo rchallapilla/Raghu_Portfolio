@@ -11,7 +11,7 @@ export function HeroSection() {
   }
 
   return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="hero" className="relative min-h-[calc(100vh-4rem)] flex items-center justify-center overflow-hidden pt-20">
       <div className="absolute inset-0 grid-pattern opacity-50" />
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/50 to-background" />
 
@@ -26,13 +26,13 @@ export function HeroSection() {
 
           <div className="flex flex-wrap items-center justify-center gap-4 text-sm md:text-base">
             <div className="glass-card px-4 py-2 rounded-full">
-              <span className="text-primary font-mono">12x Faster Report Generation</span>
+              <span className="text-primary font-mono whitespace-nowrap">12x Faster Report Generation</span>
             </div>
             <div className="glass-card px-4 py-2 rounded-full">
-              <span className="text-primary font-mono">Forrester Award Winning AI</span>
+              <span className="text-primary font-mono whitespace-nowrap">Forrester Award Winning AI</span>
             </div>
             <div className="glass-card px-4 py-2 rounded-full">
-              <span className="text-primary font-mono">90% Reduced Onboarding Time</span>
+              <span className="text-primary font-mono whitespace-nowrap">90% Reduced Onboarding Time</span>
             </div>
           </div>
 
