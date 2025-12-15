@@ -19,8 +19,8 @@ export function HeroSection() {
         <div className="max-w-4xl mx-auto text-center space-y-8">
           <div className="space-y-4">
             <h1 className="font-mono text-5xl md:text-7xl font-bold text-balance">AI Product Builds & Demos</h1>
-            <p className="text-xl md:text-2xl text-muted-foreground">
-              Curated by <span className="text-foreground font-medium">Raghu Challapilla</span>, AI Product Manager
+            <p className="text-base md:text-lg text-muted-foreground">
+              Curated by <span className="text-foreground font-medium">Raghu Challapilla</span>
             </p>
           </div>
 
@@ -29,10 +29,10 @@ export function HeroSection() {
               <span className="text-primary font-mono">12x Faster Report Generation</span>
             </div>
             <div className="glass-card px-4 py-2 rounded-full">
-              <span className="text-primary font-mono">Forrester Award Winner</span>
+              <span className="text-primary font-mono">Forrester Award Winning AI</span>
             </div>
             <div className="glass-card px-4 py-2 rounded-full">
-              <span className="text-primary font-mono">20+ AI Apps Shipped</span>
+              <span className="text-primary font-mono">20+ LLM Apps Shipped</span>
             </div>
           </div>
 
