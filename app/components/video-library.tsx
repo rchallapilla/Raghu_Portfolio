@@ -195,7 +195,7 @@ export function VideoLibrary() {
           <div className="text-center space-y-4">
             <h2 className="font-mono text-4xl md:text-5xl font-bold">Technical Deep Dives</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              12+ technical demos covering advanced AI engineering topics
+              Technical demos covering advanced AI engineering topics
             </p>
           </div>
 
