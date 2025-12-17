@@ -25,7 +25,7 @@ const projects = [
   {
     title: "Asimov-Vedanta Interface",
     description:
-      "AI ethics and philosophy exploration platform. Bridges Western AI safety principles with Eastern philosophical wisdom through cross-domain reasoning and dialogue systems.",
+      "Built a conversation AI to explore ethical alignment in autonomous systems integrating cross domain reasoning from philosophy and machine ethics",
     impact: "Novel AI ethics framework",
     techStack: ["LLM Reasoning", "Philosophy AI", "Ethical AI", "Dialog Systems"],
     demo: "https://asimov-vedanta.vercel.app/",
