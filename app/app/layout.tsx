@@ -83,6 +83,13 @@ export const metadata: Metadata = {
     ],
     apple: "/apple-icon.png",
   },
+  manifest: "/manifest.json",
+  themeColor: "#3b82f6",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "black-translucent",
+    title: "RC Portfolio",
+  },
 }
 
 const personSchema = {
@@ -149,6 +156,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        {/* Preconnect to external domains for performance */}
+        <link rel="preconnect" href="https://www.loom.com" />
+        <link rel="preconnect" href="https://vercel.live" />
+        <link rel="dns-prefetch" href="https://www.loom.com" />
+        <link rel="dns-prefetch" href="https://vercel.live" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
